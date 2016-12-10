@@ -7,6 +7,7 @@ var fs = require('fs');
 // WebDriver
 global.browser = require('webdriverio').remote({
     desiredCapabilities: {
+        marionette: true,
         browserName: 'firefox'
     }
 });
